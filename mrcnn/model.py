@@ -2101,7 +2101,7 @@ class MaskRCNN():
         import h5py
         # Conditional import to support versions of Keras before 2.2
         # TODO: remove in about 6 months (end of 2018)
-        from keras.engine import saving
+        from keras.engine import topology as saving
 
         if exclude:
             by_name = True
